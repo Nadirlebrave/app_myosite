@@ -7,9 +7,9 @@ import json
 
 def load_models():
     # Loader le modele pour l'utiliser 
-    modele = joblib.load("pkl\entropy_best_decision_tree_model.pkl")
+    modele = joblib.load(os.path.join("pkl","entropy_best_decision_tree_model.pkl"))
 
-    y_label_encoder =  joblib.load("pkl\entropy_y_label_encoder.pkl")
+    y_label_encoder =  joblib.load(os.path.join("pkl","entropy_y_label_encoder.pkl"))
 
     # Récupérer juste le classifier de l'ensemble du pipeline
     classifier = modele.named_steps['decisiontreeclassifier']
@@ -18,7 +18,7 @@ def load_models():
 
 
 def load_Xcodification():
-    with open("pkl\colonnes_categories.json", "r") as file:
+    with open(os.path.join("pkl","colonnes_categories.json"), "r") as file:
         codification_colonnes = json.load(file)
     return codification_colonnes
 
@@ -94,27 +94,27 @@ if page == pages[1]:
         
     bouton_arbre_dec = st.checkbox(":arrow_heading_down: Afficher l'arbre de décision ?.")
     if bouton_arbre_dec:
-        st.image("images\decision_tree.png")
+        st.image(os.path.join("images","decision_tree.png"))
 
     bouton_arbre_dec_txt = st.checkbox(":arrow_heading_down: Afficher l'arbre de décision sous forme de texte ?.")
     if bouton_arbre_dec_txt:
-        with open("images\decision_tree.txt", 'r', encoding='utf-8') as file:
+        with open(os.path.join("images","decision_tree.txt"), 'r', encoding='utf-8') as file:
             content = file.read()
         st.text(content) 
 
     bouton_features_import = st.checkbox(":arrow_heading_down: Afficher le diagramme : importance des variables ?.")
     if bouton_features_import:
-        st.image("images\Importances des variables.png")
+        st.image(os.path.join("images","Importances des variables.png"))
     
     bouton_mat_corr = st.checkbox(':arrow_heading_down: Afficher les matrices de corrélation ?.')
     if bouton_mat_corr:
         col1,col2 = st.columns(2)
         with col1:
             st.write("**Sur les données d'apprentissage (Train)**")
-            st.image("images\Matrice de confusion sur données entrainement.png")
+            st.image(os.path.join("images","Matrice de confusion sur données entrainement.png"))
         with col2:
             st.write("**Sur les données de test (Test)**")
-            st.image("images\Matrice de confusion sur donées test.png")
+            st.image(os.path.join("images","Matrice de confusion sur donées test.png"))
     
     bouton_courbe_roc = st.checkbox(":arrow_heading_down: Afficher les courbes ROC ?.")
     if bouton_courbe_roc:
@@ -124,18 +124,18 @@ if page == pages[1]:
         )
         # Logique conditionnelle en fonction de l'option choisie
         if option == 'Classe 1':
-            st.image("images\Courbe_ROC_CLASSE_1.png")
+            st.image(os.path.join("images","Courbe_ROC_CLASSE_1.png"))
         elif option == 'Classe 2':
-            st.image("images\Courbe_ROC_CLASSE_2.png")
+            st.image(os.path.join("images","Courbe_ROC_CLASSE_2.png"))
         elif option == 'Classe 3':
-            st.image("images\Courbe_ROC_CLASSE_3.png")
+            st.image(os.path.join("images","Courbe_ROC_CLASSE_3.png"))
         else:
-            st.image("images\Courbe_ROC_CLASSE_4.png")
+            st.image(os.path.join("images","Courbe_ROC_CLASSE_4.png"))
     
     bouton_metrics = st.checkbox(":arrow_heading_down: Afficher les metrics ?.")
     if bouton_metrics:
-        data = pd.read_json("metrics\metrics.json")
-        with open("metrics\metrics.json", 'r', encoding='utf-8') as file:
+        data = pd.read_json(os.path.join("metrics","metrics.json"))
+        with open(os.path.join("metrics","metrics.json"), 'r', encoding='utf-8') as file:
             data = json.load(file)
         df = pd.DataFrame(data[0])
         st.table(df)
