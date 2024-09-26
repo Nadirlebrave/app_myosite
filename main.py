@@ -40,7 +40,7 @@ pages = ["Présentation", "Résultats du modèle", "Simulation/Prédiction"]
 page = st.sidebar.radio("Aller vers la page :", pages)
 
 if page == pages[0]:
-    st.image('images\Sans titre.png')
+    #st.image('images\Sans titre.png')
     st.title(":male-technologist: *Dermatomyosites : Présentation*")
     st.write("**- Objectif de l'analyse :**")
     st.write('''L'objectif de cette analyse est de construire un modèle de classification 
