@@ -1,0 +1,20 @@
+Classe 1:
+    précision = 0.82
+    Sensibilité (Recall) = 0.9 
+    Spécificité = 0.9
+    
+Classe 2:
+    précision = 0.71
+    Sensibilité (Recall) = 0.71 
+    Spécificité = 0.91
+    
+Classe 3:
+    précision = 0.62
+    Sensibilité (Recall) = 0.83 
+    Spécificité = 0.88
+    
+Classe 4:
+    précision = 1.0
+    Sensibilité (Recall) = 0.57 
+    Spécificité = 1.0
+    

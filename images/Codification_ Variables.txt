@@ -1,0 +1,123 @@
+{
+    "SEXE": {
+        "0": "F",
+        "1": "H"
+    },
+    "ATCDPMAI": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "DEFICT": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "DM1": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "DM2": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "DM3": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "DM4": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "DM5": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "DM6": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "DM7": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "SAS1M1": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "SAS2M1": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "DYSPHA": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "CPK1": {
+        "0": "Eleve",
+        "1": "Normal"
+    },
+    "TROP1": {
+        "0": "Eleve",
+        "1": "Normal"
+    },
+    "ASM": {
+        "0": "Negatif",
+        "1": "Positif"
+    },
+    "JO1": {
+        "0": "Negatif",
+        "1": "Positif"
+    },
+    "NONJO": {
+        "0": "Negatif",
+        "1": "Positif"
+    },
+    "MI2": {
+        "0": "Negatif",
+        "1": "Positif"
+    },
+    "MDA5": {
+        "0": "Negatif",
+        "1": "Positif"
+    },
+    "TIF1": {
+        "0": "Negatif",
+        "1": "Positif"
+    },
+    "NXP2": {
+        "0": "Negatif",
+        "1": "Positif"
+    },
+    "SRP": {
+        "0": "Negatif",
+        "1": "Positif"
+    },
+    "AAM": {
+        "0": "Negatif",
+        "1": "Positif"
+    },
+    "HTAP": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "TDM1": {
+        "0": "NL",
+        "1": "presence_PID"
+    },
+    "BM": {
+        "0": "NF",
+        "1": "Nl",
+        "2": "pathologique"
+    },
+    "ARTRI": {
+        "0": "Non",
+        "1": "Oui"
+    },
+    "EFR1": {
+        "0": "NL",
+        "1": "presence_syndrome_restrictif"
+    },
+    "ARTRA": {
+        "0": "Non",
+        "1": "Oui"
+    }
+}

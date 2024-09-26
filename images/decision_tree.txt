@@ -1,0 +1,34 @@
+|--- DM6 <= 0.50
+|   |--- ASM <= 0.50
+|   |   |--- DM1 <= 0.50
+|   |   |   |--- class: CLASSE_1
+|   |   |--- DM1 >  0.50
+|   |   |   |--- SAS2M1 <= 0.50
+|   |   |   |   |--- class: CLASSE_3
+|   |   |   |--- SAS2M1 >  0.50
+|   |   |   |   |--- class: CLASSE_1
+|   |--- ASM >  0.50
+|   |   |--- JO1 <= 0.50
+|   |   |   |--- MDA5 <= 0.50
+|   |   |   |   |--- DEFICT <= 0.50
+|   |   |   |   |   |--- class: CLASSE_2
+|   |   |   |   |--- DEFICT >  0.50
+|   |   |   |   |   |--- class: CLASSE_3
+|   |   |   |--- MDA5 >  0.50
+|   |   |   |   |--- class: CLASSE_2
+|   |   |--- JO1 >  0.50
+|   |   |   |--- DEFICT <= 0.50
+|   |   |   |   |--- class: CLASSE_2
+|   |   |   |--- DEFICT >  0.50
+|   |   |   |   |--- SEXE <= 0.50
+|   |   |   |   |   |--- class: CLASSE_1
+|   |   |   |   |--- SEXE >  0.50
+|   |   |   |   |   |--- class: CLASSE_1
+|--- DM6 >  0.50
+|   |--- MI2 <= 0.50
+|   |   |--- ATCDPMAI <= 0.50
+|   |   |   |--- class: CLASSE_4
+|   |   |--- ATCDPMAI >  0.50
+|   |   |   |--- class: CLASSE_2
+|   |--- MI2 >  0.50
+|   |   |--- class: CLASSE_3

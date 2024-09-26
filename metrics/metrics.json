@@ -1,0 +1,9 @@
+[
+  {
+    "Classe 1": {"Précision" :  0.82, "Sensibilité (Recall)" : 0.9,  "Spécificité" :0.9},
+    "Classe 2": {"Précision" :  0.71, "Sensibilité (Recall)" : 0.71,  "Spécificité" :0.91},
+    "Classe 3": {"Précision" :  0.62, "Sensibilité (Recall)" : 0.83,  "Spécificité" :0.88},
+    "Classe 4": {"Précision" :  1.0, "Sensibilité (Recall)" : 0.57,  "Spécificité" :1.0}
+
+  }
+]
