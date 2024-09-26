@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import json
-from clf import load_models, prediction
+from clf.clf import load_models, prediction
 
 
 

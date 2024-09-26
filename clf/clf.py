@@ -2,9 +2,7 @@ import joblib
 import os
 import json
 
-ROOT_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
-print(ROOT_PATH)
 def load_models():
     # Loader le modele pour l'utiliser 
     modele = joblib.load("pkl\entropy_best_decision_tree_model.pkl")
