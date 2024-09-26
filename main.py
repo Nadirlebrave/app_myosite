@@ -34,9 +34,6 @@ col1,col2 = st.sidebar.columns(2)
 with col1:
     st.title("**Dermatomyosites**")
 
-with col2:
-    st.sidebar.image('images\DermatoMu.png', width = 100)
-
 
 st.sidebar.title("Plan")
 pages = ["Présentation", "Résultats du modèle", "Simulation/Prédiction"]
